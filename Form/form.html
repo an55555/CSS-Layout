@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Title</title>
+    <link href="style-l.css" type="text/css" rel="stylesheet"></link>
+    <style>
+        *{
+            font-family: 微软雅黑;
+        }
+        /*我的表单*/
+        .formOutBox{  position: relative;  }
+        .formBtnBox{
+            width: 150px;
+            float: right;
+            position: absolute;
+            right: 0;
+            height: 100%;
+            top: 0;
+            z-index: 2;
+        }
+        .formBtnBox .btn{
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            right: 30px;
+        }
+        .formBox{  margin-right: 150px;  color: #69717d;  }
+        .formBoxUnit{  width: 25%;  float: left;  }
+        .formBoxUnit .inputLabel{
+            text-align: right;
+            width: 100px;
+            float: left;
+            padding-top: 11px;
+        }
+        .formOutBox .inputBox{  margin-left: 105px;  padding: 7px;  }
+        .formOutBox .inputBox .inputStyle{
+            border-radius: 3px;
+            width: 100%;
+            min-height: 30px;
+            resize: none;
+            border: solid 1px #ced7e5;
+        }
+        /*用于checkBox和radio*/
+        .formOutBox .checkboxRadio{  display: inline-block;  height: 30px;  line-height: 30px;  }
+        .formOutBox  .checkboxRadioStyle{
+            position: relative;
+            top: 1px;
+
+            margin-right: 20px;
+        }
+        /*有背景色的表单*/
+        .bgForm{  background: #eee;  border-top: solid 1px #e6e6e6;  }
+        .bgForm .formBox {margin-right:0}
+        .bgForm .formBoxUnit{
+            border-bottom: solid 1px #e6e6e6;
+            padding: 0 5px;
+            width: 100%;
+            float: none;
+        }
+        .bgForm .inputBox{  background: #fff;  }
+
+    </style>
+</head>
+<body>
+<div class="formOutBox">
+    <div class="formBtnBox">
+        <span class="btn btn-big btn-primary">查询</span>
+    </div>
+    <div class="formBox">
+        <div>
+            <div class="formBoxUnit">
+                <label class="inputLabel">
+                    事件类型：
+                </label>
+                <div class="inputBox">
+                    <select class="inputStyle">
+                        <option>请选择</option>
+                        <option>交通事故</option>
+                        <option>刑事案件</option>
+                    </select>
+                </div>
+            </div>
+            <div class="formBoxUnit">
+                <label class="inputLabel">
+                    求救人：
+                </label>
+                <div class="inputBox">
+                    <input type="text" class="inputStyle">
+                </div>
+            </div>
+
+            <div class="formBoxUnit">
+                <label class="inputLabel">
+                    手机号码：
+                </label>
+                <div class="inputBox">
+                    <input type="text" class="inputStyle">
+                </div>
+            </div>
+            <div class="formBoxUnit">
+                <label class="inputLabel">
+                    发生时间：
+                </label>
+                <div class="inputBox">
+                    <input type="text" class="inputStyle" onclick="WdatePicker()" placeholder="请选择时间">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="formBoxUnit">
+                <label class="inputLabel">
+                    状态：
+                </label>
+                <div class="inputBox">
+                    <select class="inputStyle">
+                        <option>请选择</option>
+                        <option>求救中</option>
+                        <option>已解除</option>
+                    </select>
+                </div>
+            </div>
+            <div class="formBoxUnit">
+                <label class="inputLabel">
+                    地点：
+                </label>
+                <div class="inputBox">
+                    <input type="text" class="inputStyle">
+                </div>
+            </div>
+            <div class="formBoxUnit">
+                <label class="inputLabel">
+                    复选框：
+                </label>
+                <div class="inputBox">
+                    <span class="checkboxRadio">
+                        <label>男：</label>
+                        <input type="checkbox" class="checkboxRadioStyle">
+                    </span>
+                    <span class="checkboxRadio">
+                        <label>男：</label>
+                        <input type="checkbox" class="checkboxRadioStyle">
+                    </span>
+                    <span class="checkboxRadio">
+                        <label>男：</label>
+                        <input type="radio" class="checkboxRadioStyle">
+                    </span>
+                    <span class="checkboxRadio">
+                        <label>男：</label>
+                        <input type="radio" class="checkboxRadioStyle">
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div style="clear: both"></div>
+<h1>有背景色的，最外层加个bgForm类</h1>
+<div class="formOutBox bgForm">
+    <div class="formBox">
+        <div>
+            <div class="formBoxUnit">
+                <label class="inputLabel">
+                    事件类型：
+                </label>
+                <div class="inputBox">
+                    <select class="inputStyle">
+                        <option>请选择</option>
+                        <option>交通事故</option>
+                        <option>刑事案件</option>
+                    </select>
+                </div>
+            </div>
+            <div class="formBoxUnit">
+                <label class="inputLabel">
+                    求救人：
+                </label>
+                <div class="inputBox">
+                    <input type="text" class="inputStyle">
+                </div>
+            </div>
+
+            <div class="formBoxUnit">
+                <label class="inputLabel">
+                    手机号码：
+                </label>
+                <div class="inputBox">
+                    <input type="text" class="inputStyle">
+                </div>
+            </div>
+            <div class="formBoxUnit">
+                <label class="inputLabel">
+                    发生时间：
+                </label>
+                <div class="inputBox">
+                    <input type="text" class="inputStyle" onclick="WdatePicker()" placeholder="请选择时间">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="formBoxUnit">
+                <label class="inputLabel">
+                    状态：
+                </label>
+                <div class="inputBox">
+                    <select class="inputStyle">
+                        <option>请选择</option>
+                        <option>求救中</option>
+                        <option>已解除</option>
+                    </select>
+                </div>
+            </div>
+            <div class="formBoxUnit">
+                <label class="inputLabel">
+                    地点：
+                </label>
+                <div class="inputBox">
+                    <input type="text" class="inputStyle">
+                </div>
+            </div>
+            <div class="formBoxUnit">
+                <label class="inputLabel">
+                    复选框：
+                </label>
+                <div class="inputBox">
+                    <span class="checkboxRadio">
+                        <label>男：</label>
+                        <input type="checkbox" class="checkboxRadioStyle">
+                    </span>
+                    <span class="checkboxRadio">
+                        <label>男：</label>
+                        <input type="checkbox" class="checkboxRadioStyle">
+                    </span>
+                    <span class="checkboxRadio">
+                        <label>男：</label>
+                        <input type="radio" class="checkboxRadioStyle">
+                    </span>
+                    <span class="checkboxRadio">
+                        <label>男：</label>
+                        <input type="radio" class="checkboxRadioStyle">
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
