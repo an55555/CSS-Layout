@@ -58,6 +58,7 @@ css:
 ```
 ### 内联表单
 
+![内联表单](https://github.com/an55555/CSS-Layout/blob/master/Form/form-inline.png?raw=true)
 
 
 div:
@@ -158,6 +159,8 @@ div:
 ```
 
 ### 块级表单-最后层加上类bgForm
+
+![Block-form demo](https://github.com/an55555/CSS-Layout/blob/master/Form/form-block.png?raw=true)
 
 div:
 
