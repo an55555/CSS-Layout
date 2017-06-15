@@ -159,7 +159,7 @@ css:
 ```
 ### 默认布局
 
-
+![tree demo](https://github.com/an55555/CSS-Layout/blob/master/Tree/tree.png?raw=true)
 
 div:
 
@@ -220,6 +220,8 @@ div:
 ```
 
 ### 有编辑按钮最外加上类slide-tree-edit
+
+![tree-edit demo](https://github.com/an55555/CSS-Layout/blob/master/Tree/tree-edit.png?raw=true)
 
 div:
 
