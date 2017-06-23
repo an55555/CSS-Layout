@@ -4,7 +4,7 @@
 
 css:
 
-```
+```css
   .tableStyle {
             min-width: 100%;
             background: #fff;
@@ -40,12 +40,13 @@ css:
             margin: 0;
         }
         .tableStyle tr:nth-child(even){  background: #fafafa;  }
+        .tableStyle .tableCheckBox{position: relative;top: 1px}
         /*.tableStyle tr:hover{  background: #f5f5f5}*/
 ```
 
 div:
 
-```
+```html
 <div class="tableOutBox">
     <table  class="tableStyle tableStyleKeepAll" >
         <thead>
@@ -55,7 +56,7 @@ div:
     </thead>
         <tbody>
         <tr>
-            <td class="firstTd"><p class="td-p">1</p></td>
+      <td class="firstTd"><p class="td-p"><span class="tableCheckBox"><input type="checkbox"></span>1</p></td>
             <td><p class="td-p">小组1-1</p></td>
             <td><p class="td-p">否</p></td>
             <td><p class="td-p">录入员（组员）</p></td>
@@ -63,7 +64,7 @@ div:
             <td class="operateTd"><p class="td-p"><span class="edit">编辑</span><span class="delete">删除</span></p></td>
         </tr>
         <tr>
-            <td class="firstTd"><p class="td-p">1</p></td>
+            <td class="firstTd"><p class="td-p"><span class="tableCheckBox"><input type="checkbox"></span>1</p></td>
             <td><p class="td-p">小组1-1</p></td>
             <td><p class="td-p">否</p></td>
             <td colspan="2"><p class="td-p">合并单元格</p></td>
