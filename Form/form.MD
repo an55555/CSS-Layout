@@ -2,7 +2,7 @@
 
 css:
 
-```
+```css
 /*我的表单*/
         .formOutBox{  position: relative;  }
         .formBtnBox{
@@ -32,9 +32,15 @@ css:
         .formOutBox .inputBox .inputStyle{
             border-radius: 3px;
             width: 100%;
-            min-height: 30px;
             resize: none;
             border: solid 1px #ced7e5;
+        }
+        .formOutBox .inputBox input[type=text].inputStyle,
+        .formOutBox .inputBox select.inputStyle{
+            min-height: 30px;
+        }
+        .formOutBox .inputBox textarea.inputStyle{
+            min-height: 60px;
         }
         /*用于checkBox和radio*/
         .formOutBox .checkboxRadio{  display: inline-block;  height: 30px;  line-height: 30px;  }
@@ -63,7 +69,7 @@ css:
 
 div:
 
-```
+```html
 <div class="formOutBox">
     <div class="formBtnBox">
         <span class="btn btn-big btn-primary">查询</span>
@@ -164,7 +170,7 @@ div:
 
 div:
 
-```$xslt
+```html
     <div class="formOutBox bgForm">
         <div class="formBox">
             <div>
