@@ -4,7 +4,7 @@ css:
 
 ```css
 /*我的表单*/
-        .formOutBox{  position: relative;  }
+ .formOutBox{  position: relative;  }
         .formBtnBox{
             width: 150px;
             float: right;
@@ -29,6 +29,7 @@ css:
             padding-top: 11px;
         }
         .formOutBox .inputBox{  margin-left: 105px;  padding: 7px;  }
+        .formOutBox .inputStyle{padding: 0 4px}
         .formOutBox .inputBox .inputStyle{
             border-radius: 3px;
             width: 100%;
@@ -55,7 +56,7 @@ css:
         .bgForm .formBox {margin-right:0}
         .bgForm .formBoxUnit{
             border-bottom: solid 1px #e6e6e6;
-            padding: 0 5px;
+            padding: 0 1px;
             width: 100%;
             float: none;
         }

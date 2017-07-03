@@ -5,7 +5,7 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Title</title>
-    <link href="style-l.css" type="text/css" rel="stylesheet"></link>
+    <link href="../style-l.css" type="text/css" rel="stylesheet"></link>
     <style>
         *{
             font-family: 微软雅黑;
@@ -36,12 +36,19 @@
             padding-top: 11px;
         }
         .formOutBox .inputBox{  margin-left: 105px;  padding: 7px;  }
+        .formOutBox .inputStyle{padding: 0 4px}
         .formOutBox .inputBox .inputStyle{
             border-radius: 3px;
             width: 100%;
-            min-height: 30px;
             resize: none;
             border: solid 1px #ced7e5;
+        }
+        .formOutBox .inputBox input[type=text].inputStyle,
+        .formOutBox .inputBox select.inputStyle{
+            min-height: 30px;
+        }
+        .formOutBox .inputBox textarea.inputStyle{
+            min-height: 60px;
         }
         /*用于checkBox和radio*/
         .formOutBox .checkboxRadio{  display: inline-block;  height: 30px;  line-height: 30px;  }
@@ -56,7 +63,7 @@
         .bgForm .formBox {margin-right:0}
         .bgForm .formBoxUnit{
             border-bottom: solid 1px #e6e6e6;
-            padding: 0 5px;
+            padding: 0 1px;
             width: 100%;
             float: none;
         }
