@@ -377,3 +377,20 @@ img {  vertical-align: middle;  }
 }
 /*鼠标光标*/
 .cursor{cursor: pointer}
+
+.bg-primary{
+    border: solid 1px #19CAAD;
+    background: #19CAAD;
+    color: #fff;
+}
+.color-primary{
+    color: #19CAAD;
+}
+.bg-warning{
+    border: solid 1px #F4606C;
+    background: #F4606C;
+    color: #fff;
+}
+.color-warning{
+    color: #F4606C;
+}
