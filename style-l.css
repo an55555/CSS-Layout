@@ -409,3 +409,22 @@ img {  vertical-align: middle;  }
 .checkBoxBg_0{background-position:0 0}
 .checkBoxBg_1{background-position: -18px 0}
 .checkBoxBg_2{background-position: -36px 0}
+
+.radioBoxBg {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    font-size: 12px;
+    top: 2px;
+    cursor: pointer;
+    background: #d3eafd;
+    border:solid 4px #d3eafd;
+    border-radius: 50%;
+}
+.radioBoxBg_0{
+    background: #d3eafd;
+}
+.radioBoxBg_1{
+    background: #39a4ff;
+}
