@@ -404,7 +404,8 @@ img {  vertical-align: middle;  }
     font-size: 12px;
     top: 2px;
     cursor: pointer;
+    background: url("https://github.com/an55555/CSS-Layout/blob/master/img/checkBoxBg.png?raw=true") no-repeat 0 0 / auto 100%
 }
-.checkBoxBg_0{background: url("./Img/checkBoxBg.png") no-repeat 0 0 / auto 100%}
-.checkBoxBg_1{background: url("./Img/checkBoxBg.png") no-repeat -18px 0 / auto 100%}
-.checkBoxBg_2{background: url("./Img/checkBoxBg.png") no-repeat -36px / auto 100%}
+.checkBoxBg_0{background-position:0 0}
+.checkBoxBg_1{background-position: -18px 0}
+.checkBoxBg_2{background-position -36px 0}
