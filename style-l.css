@@ -421,6 +421,7 @@ img {  vertical-align: middle;  }
     background: #d3eafd;
     border:solid 4px #d3eafd;
     border-radius: 50%;
+    cursor:pointer;
 }
 .radioBoxBg_0{
     background: #d3eafd;
