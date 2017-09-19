@@ -6,7 +6,7 @@ css:
 
 ```css
   .tableStyle {
-            min-width: 100%;
+            width: 100%;
             background: #fff;
             border-collapse:collapse;  /*重叠的border合度为一条线*/
             /*控制cellpadding-单元格间距-单元边沿与单元内容之间的空间*/
@@ -41,6 +41,15 @@ css:
         }
         .tableStyle tr:nth-child(even){  background: #fafafa;  }
         .tableStyle .tableCheckBox{position: relative;top: 1px}
+         /*保持单行，超出显示省略号*/
+        .tableEllipsis{table-layout: fixed}
+
+        .tableEllipsis .td-p,
+        .tableEllipsis .th-p{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
         /*.tableStyle tr:hover{  background: #f5f5f5}*/
 ```
 
