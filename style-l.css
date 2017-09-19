@@ -12,9 +12,10 @@ blockquote {  text-align: right;  padding: 10px 20px;  margin: 0 0 20px;  font-s
 .clearfix:after { content:"."; display:block; height:0; visibility:hidden; clear:both; }
 .clearfix { zoom:1; }
 /*作用不明*/
+/*
 div:before{  display: block;  content: " ";  box-sizing: border-box;  }
-/*!*即使子DIV使用float，父DIV仍会被撑开*!*/
 div:after{  content: " ";  display: block;  clear: both;  }
+*/
 /*列表*/
 ul, ol {  margin-top: 0;  margin-bottom: 10px;  }
 ul ul, ol ul, ul ol, ol ol {  margin-bottom: 0;  }
